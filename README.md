@@ -1,4 +1,22 @@
-# Zept
+<div align="center">
+  <h1>zept</h1>
+  🔭 Nodejs HTTP Library for performance
+  <div>
+    <a href="https://www.npmjs.com/package/zept">npm</a> 
+    <a href="https://github.com/zely-js/zept">github</a> 
+    <a href="https://zely.netlify.app/packages/zept">docs</a>
+  </div>
+</div>
+
+---
+
+## Installation
+
+```bash
+npm install --save-dev zept
+```
+
+## Usage
 
 ```js
 const { zept } = require('zept');
@@ -17,14 +35,9 @@ const routes = [
   },
 ];
 
-const app = zept(routes);
-
-app.routes.push({
-  path: '/foo',
-  module: (req, res) => {
-    res.end('bar');
-  },
-});
-
-app.listen(3000);
+zept(routes).listen(3000);
 ```
+
+## License
+
+MIT
