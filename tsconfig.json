@@ -14,8 +14,7 @@
 
     "baseUrl": ".",
     "paths": {
-      "$*": ["./packages/*"],
-      "$app/*": ["./app/*"]
+      "$*": ["./packages/*"]
     }
   },
 
