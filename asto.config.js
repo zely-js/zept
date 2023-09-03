@@ -15,22 +15,10 @@ const repo =
     },
   });
 
-const core =
-  (name) =>
-  (input, output, opts = {}) => ({
-    input: `${name}/src/${input}`,
-    output: `${name}/dist/${output}`,
-    options: {
-      ...opts,
-      plugins: nodeExternalsPlugin({
-        packagePath: `${name}/package.json`,
-        devDependencies: true,
-      }),
-    },
-  });
-
 const repos = {
-  app: core('app'),
+  zept: repo('zept'),
+  http: repo('http'),
+  path: repo('path'),
 };
 
 module.exports = [
@@ -38,6 +26,10 @@ module.exports = [
     // core packages
     loader: esbuild,
 
-    entryPoints: [repos.app('index.ts', 'index.js')],
+    entryPoints: [
+      repos.zept('index.ts', 'index.js'),
+      repos.http('index.ts', 'index.js'),
+      repos.path('index.ts', 'index.js'),
+    ],
   },
 ];
