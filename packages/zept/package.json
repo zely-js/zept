@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
+  "repository": "https://github.com/zely-js/zept/",
   "dependencies": {
     "@zept/http": "*",
     "@zept/path-regexp": "*"
