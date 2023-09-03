@@ -1,0 +1,12 @@
+{
+  "name": "@zept/path-regexp",
+  "version": "0.0.0",
+  "description": "path to regexp",
+  "main": "./dist/index.js",
+  "types": "./index.d.ts",
+  "homepage": "https://github.com/zely-js/zept",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ]
+}
