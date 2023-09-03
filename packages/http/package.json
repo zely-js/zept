@@ -1,0 +1,10 @@
+{
+  "name": "@zept/http",
+  "version": "0.0.0",
+  "types": "./types/index.d.ts",
+  "main": "./dist/index.js",
+  "files": [
+    "types",
+    "dist"
+  ]
+}
