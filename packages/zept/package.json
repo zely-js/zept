@@ -4,6 +4,7 @@
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
   "repository": "https://github.com/zely-js/zept/",
+  "homepage": "https://zely.netlify.app/packages/zept",
   "dependencies": {
     "@zept/http": "*",
     "@zept/path-regexp": "*"
