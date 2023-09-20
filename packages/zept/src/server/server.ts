@@ -33,6 +33,30 @@ export class Server extends ZeptServer {
     return this;
   }
 
+  append(route: Route): symbol {
+    route.id = Symbol(route.path);
+    this.routes.push(route);
+
+    return route.id;
+  }
+
+  remove(id: symbol) {
+    this.routes = this.routes.filter((route) => route.id !== id);
+
+    return this.routes;
+  }
+
+  edit(id: symbol, route: Route) {
+    this.routes = this.routes.map((r) => {
+      if (r.id !== id) {
+        return r;
+      }
+      return route;
+    });
+
+    return this.routes;
+  }
+
   /**
    * Assign `req.params`
    */

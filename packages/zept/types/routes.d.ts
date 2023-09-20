@@ -7,4 +7,5 @@ export type RouteModule = Handler | Record<string, Handler>;
 export interface Route {
   path: string;
   module: RouteModule;
+  id?: symbol;
 }

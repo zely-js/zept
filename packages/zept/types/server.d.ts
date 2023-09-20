@@ -21,6 +21,10 @@ export class Server extends ZeptServer {
   middleware(req: ZeptRequest, res: ZeptResponse, next: ServerNext): Promise<void>;
 
   processor(req: ZeptRequest, res: ZeptResponse, next: ServerNext): Promise<void>;
+
+  append(route: Route): symbol;
+  remove(id: symbol): Route[];
+  edit(id: symbol, route: Route): Route[];
 }
 
 export function zept(routes: Route[]): Server;
