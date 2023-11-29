@@ -1,6 +1,6 @@
 {
   "name": "@zept/http",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "types": "./types/index.d.ts",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
