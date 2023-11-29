@@ -2,6 +2,7 @@
   "name": "zept",
   "version": "0.0.3",
   "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./types/index.d.ts",
   "repository": "https://github.com/zely-js/zept/",
   "homepage": "https://zely.netlify.app/packages/zept",

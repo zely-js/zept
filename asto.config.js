@@ -30,6 +30,9 @@ module.exports = [
       repos.zept('index.ts', 'index.js'),
       repos.http('index.ts', 'index.js'),
       repos.path('index.ts', 'index.js'),
+      repos.zept('index.ts', 'index.mjs', { format: 'esm' }),
+      repos.http('index.ts', 'index.mjs', { format: 'esm' }),
+      repos.path('index.ts', 'index.mjs', { format: 'esm' }),
     ],
   },
 ];
